@@ -1,0 +1,11 @@
+<h1><%= "Student was found by #{params[:name]} class" %></h1>
+<ul>
+  <% c = CollegeClass.all %>
+  <% c.each do |r| %>
+    <% r.students.each do |rr| %>
+  <li>
+      <%= r.name + '|' + r.instructor  %>
+      <% end %>
+  </li>
+  <% end %>
+</eul>

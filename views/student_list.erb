@@ -1,0 +1,8 @@
+<h1><%= "Student #{params[:name]} was found" %></h1>
+<ul>
+  <% @students.each do |u| %>
+  <li>
+  <%= u.name + '|' + u.email %>
+  </li>
+  <% end %>
+</eul>
